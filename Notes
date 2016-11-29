@@ -6,5 +6,6 @@ I used the code as-is from https://www.kaggle.com/guyko81/allstate-claims-severi
 Result is: 
 1541 	new 	ShenbagaKumarS 1139.83586	1 	Tue, 29 Nov 2016 08:34:21
 
-Next is to do XGB as I had used for the Diabetes dataset
-
+I tried a modified version of XGB from here: https://www.kaggle.com/iglovikov/allstate-claims-severity/xgb-1114/code
+Result is:
+844 	new 	ShenbagaKumarS 1115.17579	2 	Tue, 29 Nov 2016 16:12:06
