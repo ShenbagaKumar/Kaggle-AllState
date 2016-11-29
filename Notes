@@ -1,3 +1,10 @@
 29 Nov 2016:
 Do a simple XGB with default features
 Submit the results to see where we are in the leaderboard. Focus is on understanding how to do a submission.
+
+I used the code as-is from https://www.kaggle.com/guyko81/allstate-claims-severity/just-an-easy-solution/comments and made a submission
+Result is: 
+1541 	new 	ShenbagaKumarS 1139.83586	1 	Tue, 29 Nov 2016 08:34:21
+
+Next is to do XGB as I had used for the Diabetes dataset
+
