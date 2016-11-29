@@ -9,3 +9,19 @@ Result is:
 I tried a modified version of XGB from here: https://www.kaggle.com/iglovikov/allstate-claims-severity/xgb-1114/code
 Result is:
 844 	new 	ShenbagaKumarS 1115.17579	2 	Tue, 29 Nov 2016 16:12:06
+Params2:
+params2 = {
+    'min_child_weight': 1,
+    'eta': 0.01,
+    'colsample_bytree': 0.5,
+    'max_depth': 12,
+    'subsample': 0.8,
+    'alpha': 1,
+    'gamma': 2,
+    'silent': 1,
+    'verbose_eval': True,
+    'seed': 2016,
+    'objective':'reg:linear',
+    'base_score':7.76
+}
+Result: 1115.98267 (slightly worse than the previous submission)
