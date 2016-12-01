@@ -25,3 +25,12 @@ params2 = {
     'base_score':7.76
 }
 Result: 1115.98267 (slightly worse than the previous submission)
+
+1 Dec 2016
+
+here is the deal. we are going to do 2 things
+1. tweak the params a little without changing anything else and get the score
+2. we are going to transform the numerical features with high skew(refer BOXCOX) and predict
+3. Also, find out how the time required for training the model differ based on the number of parallel notebooks we have
+
+Also, learn about SVM.
