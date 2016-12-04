@@ -34,3 +34,60 @@ here is the deal. we are going to do 2 things
 3. Also, find out how the time required for training the model differ based on the number of parallel notebooks we have
 
 Also, learn about SVM.
+
+04 Dec 2016
+
+I tried the average of all submissions so far and the overall score was around 1123 (worse than my best val:1115.xxx)
+
+my best score currently is 1115.17579 which is for the file sub_v.csv; file name: AllState_Insurance_29Nov2016
+I had not done any edits to the data other than categorical coding
+
+params from that submission:
+
+params = {
+        'min_child_weight': 1,
+        'eta': 0.01,
+        'colsample_bytree': 0.5,
+        'max_depth': 12,
+        'subsample': 0.8,
+        'alpha': 1,
+        'gamma': 1,
+        'silent': 1,
+        'verbose_eval': True,
+        'seed': 2016
+    }
+
+model = xgb.train(params, xgdmat, int(2012 / 0.9))
+
+prediction = np.exp(model.predict(xgtest))
+
+also, note the tuned params (from file: All_State_XGB_Params_Tuned_04Dec2016)
+
+{'base_score': 0.5,
+ 'colsample_bylevel': 1,
+ 'colsample_bytree': 0.8,
+ 'gamma': 0,
+ 'learning_rate': 0.1,
+ 'max_delta_step': 0,
+ 'max_depth': 5,
+ 'min_child_weight': 1,
+ 'missing': None,
+ 'n_estimators': 1000,
+ 'nthread': 4,
+ 'objective': 'reg:linear',
+ 'reg_alpha': 0,
+ 'reg_lambda': 1,
+ 'scale_pos_weight': 1,
+ 'seed': 2016,
+ 'silent': 0,
+ 'subsample': 0.8}
+ 
+ cvresult1 = xgb.cv(xgb1_param, 
+                   xgtrain1,
+                   num_boost_round=xgb1.get_params()['n_estimators'],
+                   nfold = 5,
+                   early_stopping_rounds = 50
+                    )
+xgb1.set_params(n_estimators = cvresult1.shape[0])
+
+dtrain_predictions = xgb1.predict(final_train[features])
