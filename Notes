@@ -91,3 +91,6 @@ also, note the tuned params (from file: All_State_XGB_Params_Tuned_04Dec2016)
 xgb1.set_params(n_estimators = cvresult1.shape[0])
 
 dtrain_predictions = xgb1.predict(final_train[features])
+
+05 Dec 2016
+Average of all submissions till date, including GBR, OLS, Lasso, submission scored 1137.41861
