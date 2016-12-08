@@ -1,3 +1,4 @@
+#https://www.kaggle.com/mariusbo/allstate-claims-severity/lexical-encoding-feature-comb-lb-1109-05787
 import gc
 import numpy as np
 import pandas as pd
