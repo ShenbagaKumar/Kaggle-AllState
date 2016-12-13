@@ -94,3 +94,18 @@ dtrain_predictions = xgb1.predict(final_train[features])
 
 05 Dec 2016
 Average of all submissions till date, including GBR, OLS, Lasso, submission scored 1137.41861
+
+
+13 Dec 2016
+The competition is over and my best submission scored 1128.56916 for a position of 1110 out of total of 3155 people.
+My best submission was the single xgb sub_v. None of the Ensemble's provided a better output than this submission.
+1st Place Solution: https://www.kaggle.com/c/allstate-claims-severity/forums/t/26416/1st-place-solution?forumMessageId=149908#post149908
+
+Learnings:
+
+1. Use XGB for a dataset
+2. Create a simple Ensemble of various models
+3. Make a Kaggle submission
+4. Tune a few params in XGB
+5. Not sure what is the right way to do cross validation in XGB
+6. Got introduced to SVM and Random Forests and how to do them in Python
